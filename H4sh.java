@@ -19,13 +19,17 @@ class H4sh{
 				md5Obj.printHash();
 				break;
 			case "G":
-				//SHA128//
+				sha128 sha128Obj = new sha128();
+        			sha128Obj.printHash();
+				break;
 			case "H":
 				sha256 sha256Obj = new sha256();
 				sha256Obj.printHash();
 				break;
 			case "I":
-				//SHA512//
+				sha512 sha512Obj = new sha512();
+        			sha512Obj.printHash();
+				break;
 			case "J":
 				//Whirlpool//
 			case "K":
