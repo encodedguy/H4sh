@@ -7,10 +7,10 @@ class md5{
 		System.out.print("\033[H\033[2J");
 		System.out.flush();
 		System.out.println("MD5 ENCRYPTION MODE");
-		encode();
 	}
 
 	public String takeInput(){
+		System.out.printf("Enter a string: ");
 		Scanner input = new Scanner(System.in);
 		return input.nextLine();
 	}
@@ -42,6 +42,6 @@ class md5{
 	}
 
 	public void printHash(){
-		System.out.println(encode());
+		System.out.println("MD5: " + encode());
 	}
 }
