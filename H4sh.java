@@ -1,10 +1,11 @@
 class H4sh{
-	public String Switch(String str)
+	public static Switch(String str)
 	{
 		switch (str){
 			case "A":	
 				base32 base32Obj = new base32();
 				base32Obj.base32_1();
+				break;
 			case "B":
 				//base 64 //
 			case "C":
