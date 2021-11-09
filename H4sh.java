@@ -17,7 +17,9 @@ class H4sh{
 			case "F":
 				//MD5//
 			case "G":
-				//SHA128//
+				sha128 sha128Obj = new sha128();
+        			sha128Obj.printHash();
+				break;
 			case "H":
 				//SHA256//
 			case "I":
