@@ -1,5 +1,5 @@
 class H4sh{
-	public String Switch(String str)
+	public static void Switch(String str)
 	{
 		switch (str){
 			case "A":	
