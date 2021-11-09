@@ -1,6 +1,8 @@
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
 
 class md5{
 	public md5(){
@@ -15,8 +17,7 @@ class md5{
 		return input.nextLine();
 	}
 
-	public String encode(){
-		String password = takeInput();
+	public String encode(String password){
 		final byte[] defaultBytes = password.getBytes();
 		try{
 			final MessageDigest md5MsgDigest = MessageDigest.getInstance("MD5");
@@ -41,7 +42,38 @@ class md5{
 		return password;
 	}
 
+	public String readFile(){
+		System.out.printf("Enter filename: ");
+		Scanner input = new Scanner(System.in);
+		String filename = new String(input.nextLine());
+		String fileData = new String();
+
+		try{
+			File file = new File(filename);
+			Scanner data = new Scanner(file);
+
+			while(data.hasNextLine()){
+				fileData = data.nextLine();	
+			}
+			
+			input.close();
+		}catch(FileNotFoundException fnfe){
+		System.out.println("Unexpected error occured!");
+		fnfe.printStackTrace();
+		}
+		
+		return fileData;
+	}
+
+	public String encodeFile(String fileData){
+		return encode(fileData);
+	}
+	
+	public void printHashFromFile(){
+		System.out.println("MD5" + encodeFile(readFile()));
+	}
+
 	public void printHash(){
-		System.out.println("MD5: " + encode());
+		System.out.println("MD5: " + encode(takeInput()));
 	}
 }

@@ -21,6 +21,7 @@ class H4sh{
 			case "G":
 				sha128 sha128Obj = new sha128();
         			sha128Obj.printHash();
+				String encodeFile(){
 				break;
 			case "H":
 				sha256 sha256Obj = new sha256();
@@ -39,7 +40,6 @@ class H4sh{
 			default:
 				//any statement//		
 		}				
-	}
 	public static void main(String[] args){
 		banner bannerObj  = new banner();
 		H4sh h4shObj = new H4sh();
