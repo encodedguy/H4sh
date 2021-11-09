@@ -21,7 +21,9 @@ class H4sh{
 			case "H":
 				//SHA256//
 			case "I":
-				//SHA512//
+				sha512 sha512Obj = new sha512();
+        			sha512Obj.printHash();
+				break;
 			case "J":
 				//Whirlpool//
 			case "K":
