@@ -1,5 +1,10 @@
 // Java program to demonstrate Morse code
 import java.util.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
 
 public class Morse_Code {
     public Morse_Code(){
@@ -114,7 +119,7 @@ public class Morse_Code {
 		String filename = new String(input.nextLine());
 		String fileData = new String();
 
-		/*try{
+		try{
 			File file = new File(filename);
 			Scanner data = new Scanner(file);
 
@@ -126,7 +131,7 @@ public class Morse_Code {
 		}catch(FileNotFoundException fnfe){
 		System.out.println("Unexpected error occured!");
 		fnfe.printStackTrace();
-		}*/
+		}
 		
 		return fileData;
 	}
