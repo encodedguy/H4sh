@@ -36,7 +36,9 @@ class H4sh{
 			case "K":
 				//XOR Cipher//
 			case "L":
-				//Caesar Cipher//
+				CaesarCipher CaesarCipherObj = new CaesarCipher();
+					CaesarCipherObj.printHash();
+					break;
 			default:
 				//any statement//		
 		}				
