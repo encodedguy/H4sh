@@ -34,11 +34,13 @@ class H4sh{
 			case "J":
 				//Whirlpool//
 			case "K":
-				//XOR Cipher//
+				XORCipher XORCipherObj = new XORCipher();
+                                XORCipherObj.printHash();
+                                break;
 			case "L":
 				CaesarCipher CaesarCipherObj = new CaesarCipher();
-					CaesarCipherObj.printHash();
-					break;
+		                CaesarCipherObj.printHash();
+				break;
 			default:
 				//any statement//		
 		}				
