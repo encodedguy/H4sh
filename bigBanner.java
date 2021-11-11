@@ -9,7 +9,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class bigBanner{
-	public static void main(String args[]) throws IOException{
+	public void printBigBanner() throws IOException{
 		BufferedImage image = new BufferedImage(144, 32, BufferedImage.TYPE_INT_RGB);
 		Graphics g = image.getGraphics();
 		g.setFont(new Font("Dialog", Font.PLAIN, 20));

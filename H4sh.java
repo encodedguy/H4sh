@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 class H4sh{
 	public static void Switch(String str)
 	{
@@ -21,7 +23,6 @@ class H4sh{
 			case "G":
 				sha128 sha128Obj = new sha128();
         			sha128Obj.printHash();
-				String encodeFile(){
 				break;
 			case "H":
 				sha256 sha256Obj = new sha256();
@@ -39,41 +40,49 @@ class H4sh{
 				//Caesar Cipher//
 			default:
 				//any statement//		
-		}				
+			}
+		}	
+	
 	public static void main(String[] args){
-		banner bannerObj  = new banner();
 		H4sh h4shObj = new H4sh();
+		bigBanner bigBannerObj = new bigBanner();
+		
+		try{
+			bigBannerObj.printBigBanner();
+		}
+		catch(IOException e){
+			e.printStackTrace();
+		}
 
-		if (bannerObj.numInput() == 1){
-			bannerObj.banner1();
-			H4sh.Switch(bannerObj.banner1Input());
-			
-		}
+		banner bannerObj = new banner();
+		//if (bannerObj.numInput() == 1){
+		//	bannerObj.banner1();
+		//	H4sh.Switch(bannerObj.banner1Input());
+		//}
 	
-		if (bannerObj.numInput() == 2){
-			bannerObj.banner1();
-			H4sh.Switch(bannerObj.banner1Input());
-			
-		}
+		//if (bannerObj.numInput() == 2){
+		//	bannerObj.banner1();
+		//	H4sh.Switch(bannerObj.banner1Input());	
+		//}
 	
-		if (bannerObj.numInput() == 3){
-			bannerObj.banner1();
-			H4sh.Switch(bannerObj.banner1Input());
-			
-		}
-		if (bannerObj.numInput() == 4){
-			bannerObj.banner1();
-			H4sh.Switch(bannerObj.banner1Input());
-		}
-		if (bannerObj.numInput() == 5){
-			bannerObj.banner1();
-			H4sh.Switch(bannerObj.banner1Input());
-			
-		}
-		if (bannerObj.numInput() == 6){
-			bannerObj.banner1();
-			H4sh.Switch(bannerObj.banner1Input());
-			
-		}
+		//if (bannerObj.numInput() == 3){
+		//	bannerObj.banner1();
+		//	H4sh.Switch(bannerObj.banner1Input());			
+		//}
+		
+		//if (bannerObj.numInput() == 4){
+		//	bannerObj.banner1();
+		//	H4sh.Switch(bannerObj.banner1Input());
+		//}
+		
+		//if (bannerObj.numInput() == 5){
+		//	bannerObj.banner1();
+		//	H4sh.Switch(bannerObj.banner1Input());	
+		//}
+		
+		//if (bannerObj.numInput() == 6){
+		//	bannerObj.banner1();
+		//	H4sh.Switch(bannerObj.banner1Input());	
+		//}
 	}
 }
