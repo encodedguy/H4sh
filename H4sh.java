@@ -34,7 +34,9 @@ class H4sh{
 			case "J":
 				//Whirlpool//
 			case "K":
-				//XOR Cipher//
+				XORCipher XORCipherObj = new XORCipher();
+        			XORCipherObj.printHash();
+				break;
 			case "L":
 				//Caesar Cipher//
 			default:
