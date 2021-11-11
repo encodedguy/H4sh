@@ -1,8 +1,7 @@
 import java.io.IOException;
 
 class H4sh{
-	public static void Switch(String str)
-	{
+	public static void Switch(int option,String str){
 		switch (str){
 			case "A":	
 				//base32 base32Obj = new base32();
@@ -18,7 +17,7 @@ class H4sh{
 				//NTLM//
 			case "F":
 				md5 md5Obj = new md5();
-				md5Obj.printHash();
+				md5Obj.printHash(option);
 				break;
 			case "G":
 				sha128 sha128Obj = new sha128();
@@ -46,15 +45,27 @@ class H4sh{
 	public static void main(String[] args){
 		H4sh h4shObj = new H4sh();
 		bigBanner bigBannerObj = new bigBanner();
-		
+
 		try{
 			bigBannerObj.printBigBanner();
 		}
 		catch(IOException e){
 			e.printStackTrace();
+		
+		banner bannerObj = new banner();
+
+		int option=bannerObj.numInput();
+		if (option == 1){
+			bannerObj.banner1();
+			H4sh.Switch(option,bannerObj.banner1Input());
+			
+		}
+	
+		if (option == 2){
+			bannerObj.banner1();
+			H4sh.Switch(option,bannerObj.banner1Input());
 		}
 
-		banner bannerObj = new banner();
 		//if (bannerObj.numInput() == 1){
 		//	bannerObj.banner1();
 		//	H4sh.Switch(bannerObj.banner1Input());
@@ -84,5 +95,27 @@ class H4sh{
 		//	bannerObj.banner1();
 		//	H4sh.Switch(bannerObj.banner1Input());	
 		//}
+		
+		if (option == 3){
+			bannerObj.banner1();
+			H4sh.Switch(option,bannerObj.banner1Input());
+			
+		}
+		if (option == 4){
+			bannerObj.banner1();
+			H4sh.Switch(option,bannerObj.banner1Input());
+		}
+		if (option == 5){
+			bannerObj.banner1();
+			H4sh.Switch(option,bannerObj.banner1Input());
+			
+		}
+		if (option == 6){
+			bannerObj.banner1();
+			H4sh.Switch(option,bannerObj.banner1Input());
+			
+		}
 	}
+
+	}	
 }
