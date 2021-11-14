@@ -23,7 +23,8 @@ public class Input{
 				Scanner data = new Scanner(file);
 
 				while(data.hasNextLine()){
-					fileData = data.nextLine();	
+					fileData += data.nextLine();
+					fileData += "\n";	
 				}
 
 				input.close();
@@ -32,6 +33,7 @@ public class Input{
 				fnfe.printStackTrace();
 			}
 			
+			fileData -= "\n";	
 			return fileData;
 		default:
 			//some statement//

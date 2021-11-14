@@ -11,6 +11,12 @@ class H4sh{
 					case "B":
 						//
 						break;
+					case "C":
+						//
+						break;
+					case "D":
+						md5 md5Obj = new md5();
+						md5Obj.printHash(option);
 				}
 				break;
 			case 2:
@@ -31,6 +37,12 @@ class H4sh{
 					case "B":
 						//
 						break;
+					case "C":
+						//
+						break;
+					case "D":
+						md5 md5Obj = new md5();
+						md5Obj.printHash(option);
 				}
 				break;
 			case 4:

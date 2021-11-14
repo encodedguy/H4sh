@@ -4,8 +4,8 @@ import java.util.Scanner;
 class banner{
 	public banner(){
 		System.out.println("--->> 1. Encrypt String");
-		System.out.println("--->> 2. Encrypt Whole File");
-		System.out.println("--->> 3. Encrypt Strings in a File");
+		System.out.println("--->> 2. Encrypt Strings (File)");
+		System.out.println("--->> 3. Encrypt Whole File");
 		System.out.println("--->> 4. Decrypt String");
 		System.out.println("--->> 5. Decrypt Whole File");
 		System.out.println("--->> 6. Decrypt Strings in a File");
@@ -26,9 +26,9 @@ class banner{
 		System.out.println("--->> A. Base32");
 		System.out.println("--->> B. Base64");
 		System.out.println("--->> C. ROT13");
-		System.out.println("--->> D. Morse Code");
+		System.out.println("--->> D. MD5");
 		System.out.println("--->> E. NTLM");
-		System.out.println("--->> F. MD5");
+		System.out.println("--->> F. Morse Code");
 		System.out.println("--->> G. Sha128");
 		System.out.println("--->> H. Sha256");
 		System.out.println("--->> I. Sha512");
