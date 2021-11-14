@@ -1,49 +1,73 @@
 import java.io.IOException;
 
 class H4sh{
-	public static void Switch(int option,String str){
-		switch (str){
-			case "A":	
-				//base32 base32Obj = new base32();
-				//base32Obj.base32_1();
+	public void Switch(int option, String str){
+		switch (option){
+			case 1:
+				switch(str){
+					case "A":
+						//
+						break;
+					case "B":
+						//
+						break;
+				}
 				break;
-			case "B":
-				//base 64 //
-			case "C":
-				//ROT13//
-			case "D":
-				//MOrse code//
-			case "E":
-				//NTLM//
-			case "F":
-				md5 md5Obj = new md5();
-				md5Obj.printHash(option);
+			case 2:
+				switch(str){
+					case "A":
+						//
+						break;
+					case "B":
+						//
+						break;
+				}
 				break;
-			case "G":
-				sha128 sha128Obj = new sha128();
-        			sha128Obj.printHash();
+			case 3:
+				switch(str){
+					case "A":
+						//
+						break;
+					case "B":
+						//
+						break;
+				}
 				break;
-			case "H":
-				sha256 sha256Obj = new sha256();
-				sha256Obj.printHash();
+			case 4:
+				switch(str){
+					case "A":
+						//
+						break;
+					case "B":
+						//
+						break;
+				}	
 				break;
-			case "I":
-				sha512 sha512Obj = new sha512();
-        			sha512Obj.printHash();
+			case 5:    
+				   switch(str){
+					case "A":
+						//
+						break;
+					case "B":
+						//
+						break;
+				}
 				break;
-			case "J":
-				//Whirlpool//
-			case "K":
-				//XOR Cipher//
-			case "L":
-				//Caesar Cipher//
-			default:
-				//any statement//		
-			}
-		}	
+			case 6 :   
+				   switch(str){
+				   	case "A":
+						//
+						break;
+					case "B":
+						//
+						break;
+				   }
+				break;
+		}
+	}
 	
 	public static void main(String[] args){
-		H4sh h4shObj = new H4sh();
+		H4sh H4shObj = new H4sh();
 		bigBanner bigBannerObj = new bigBanner();
 
 		try{
@@ -51,71 +75,39 @@ class H4sh{
 		}
 		catch(IOException e){
 			e.printStackTrace();
-		
-		banner bannerObj = new banner();
+		}
 
-		int option=bannerObj.numInput();
+		banner bannerObj = new banner();
+		int option = bannerObj.numInput();
+
 		if (option == 1){
 			bannerObj.banner1();
-			H4sh.Switch(option,bannerObj.banner1Input());
-			
-		}
-	
-		if (option == 2){
-			bannerObj.banner1();
-			H4sh.Switch(option,bannerObj.banner1Input());
+			H4shObj.Switch(option, bannerObj.banner1Input());	
 		}
 
-		//if (bannerObj.numInput() == 1){
-		//	bannerObj.banner1();
-		//	H4sh.Switch(bannerObj.banner1Input());
-		//}
+		if(option == 2){
+			bannerObj.banner1();
+			H4shObj.Switch(option, bannerObj.banner1Input());
+		}
 	
-		//if (bannerObj.numInput() == 2){
-		//	bannerObj.banner1();
-		//	H4sh.Switch(bannerObj.banner1Input());	
-		//}
-	
-		//if (bannerObj.numInput() == 3){
-		//	bannerObj.banner1();
-		//	H4sh.Switch(bannerObj.banner1Input());			
-		//}
-		
-		//if (bannerObj.numInput() == 4){
-		//	bannerObj.banner1();
-		//	H4sh.Switch(bannerObj.banner1Input());
-		//}
-		
-		//if (bannerObj.numInput() == 5){
-		//	bannerObj.banner1();
-		//	H4sh.Switch(bannerObj.banner1Input());	
-		//}
-		
-		//if (bannerObj.numInput() == 6){
-		//	bannerObj.banner1();
-		//	H4sh.Switch(bannerObj.banner1Input());	
-		//}
-		
 		if (option == 3){
 			bannerObj.banner1();
-			H4sh.Switch(option,bannerObj.banner1Input());
-			
+			H4shObj.Switch(option, bannerObj.banner1Input());	
 		}
+
 		if (option == 4){
 			bannerObj.banner1();
-			H4sh.Switch(option,bannerObj.banner1Input());
+			H4shObj.Switch(option, bannerObj.banner1Input());
 		}
+
 		if (option == 5){
 			bannerObj.banner1();
-			H4sh.Switch(option,bannerObj.banner1Input());
-			
+			H4shObj.Switch(option, bannerObj.banner1Input());	
 		}
+
 		if (option == 6){
 			bannerObj.banner1();
-			H4sh.Switch(option,bannerObj.banner1Input());
-			
+			H4shObj.Switch(option, bannerObj.banner1Input());
 		}
 	}
-
-	}	
 }

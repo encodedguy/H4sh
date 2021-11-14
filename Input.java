@@ -25,7 +25,7 @@ public class Input{
 				while(data.hasNextLine()){
 					fileData = data.nextLine();	
 				}
-				
+
 				input.close();
 			}catch(FileNotFoundException fnfe){
 				System.out.println("Unexpected error occured!");
