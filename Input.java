@@ -19,21 +19,20 @@ public class Input{
 			String fileData = new String();
 
 			try{
-				File file = new File(filename);
-				Scanner data = new Scanner(file);
-
-				while(data.hasNextLine()){
-					fileData += data.nextLine();
-					fileData += "\n";	
+				FileReader file = new FileReader(filename);
+				
+				int i;
+				while ((i = file.read()) != -1){
+					fileData += (char)i;
 				}
+				file.close();
 
 				input.close();
-			}catch(FileNotFoundException fnfe){
+			}catch(IOException ioe){
 				System.out.println("Unexpected error occured!");
-				fnfe.printStackTrace();
+				ioe.printStackTrace();
 			}
-			
-			fileData -= "\n";	
+		
 			return fileData;
 		default:
 			//some statement//
