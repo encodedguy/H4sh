@@ -27,9 +27,9 @@ class H4sh{
 						//
 						break;
 					case "H":
-						//
 						sha256 sha256Obj = new sha256();
 						sha256Obj.printHash(option);
+						break;
 					case "I":
 						sha512 sha512Obj = new sha512();
 						sha512Obj.printHash(option);
@@ -69,7 +69,8 @@ class H4sh{
 						//
 						break;
 					case "H":
-						//
+						sha256 sha256Obj = new sha256();
+						sha256Obj.printHashes();
 						break;
 					case "I":
 						//

@@ -1,6 +1,9 @@
 import java.util.Scanner;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.IOException;
 
 class sha256{
 	public sha256(){
@@ -37,4 +40,28 @@ class sha256{
 		Input inputObj = new Input();
 		System.out.println("SHA256: " + encode(inputObj.takeInput(option)));
 	}
+
+	public void printHashes(){
+		System.out.printf("Enter filename: ");
+		Scanner input = new Scanner(System.in);
+		String filename= new String(input.nextLine());
+
+		try{
+			FileReader file = new FileReader(filename);
+			BufferedReader br = new BufferedReader(file);
+			String line;
+
+			while((line = br.readLine()) != null){
+				System.out.println("SHA256: " + line + " : " + encode(line));
+			}
+
+			file.close();
+			input.close();
+
+		}catch(IOException ioe){
+			System.out.println("Unexpected error occured!");
+			ioe.printStackTrace();
+		}
+	}
+
 }
