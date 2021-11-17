@@ -28,7 +28,8 @@ class H4sh{
 						break;
 					case "H":
 						//
-						break;
+						sha256 sha256Obj = new sha256();
+						sha256Obj.printHash(option);
 					case "I":
 						//
 						break;
@@ -97,6 +98,7 @@ class H4sh{
 					case "D":
 						md5 md5Obj = new md5();
 						md5Obj.printHash(option);
+						break;
 					case "E":
 						//
 						break;
@@ -107,7 +109,8 @@ class H4sh{
 						//
 						break;
 					case "H":
-						//
+						sha256 sha256Obj = new sha256();
+						sha256Obj.printHash(option);
 						break;
 					case "I":
 						//

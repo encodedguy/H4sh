@@ -25,9 +25,10 @@ public class Input{
 				while ((i = file.read()) != -1){
 					fileData += (char)i;
 				}
+				
 				file.close();
-
 				input.close();
+
 			}catch(IOException ioe){
 				System.out.println("Unexpected error occured!");
 				ioe.printStackTrace();

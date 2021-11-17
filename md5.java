@@ -40,7 +40,7 @@ class md5{
 	}
 
 	public void printHash(int option){
-		Input input=new Input();
+		Input input = new Input();
 		System.out.println("MD5: " + encode(input.takeInput(option)));
 	}
 }

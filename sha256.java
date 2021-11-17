@@ -9,14 +9,7 @@ class sha256{
 		System.out.println("SHA256 ENCRYPTION MODE");
 	}
 
-	public String takeInput(){
-		System.out.printf("Enter a string: ");
-		Scanner input = new Scanner(System.in);
-		return input.nextLine();
-	}
-
-	public String encode(){
-		String password = takeInput();
+	public String encode(String password){
 		final byte[] defaultBytes = password.getBytes();
 		try{
 			final MessageDigest sha256Digest = MessageDigest.getInstance("SHA256");
@@ -40,7 +33,8 @@ class sha256{
 		return password;
 	}
 
-	public void printHash(){
-		System.out.println("SHA256: " + encode());
+	public void printHash(int option){
+		Input inputObj = new Input();
+		System.out.println("SHA256: " + encode(inputObj.takeInput(option)));
 	}
 }
