@@ -17,6 +17,30 @@ class H4sh{
 					case "D":
 						md5 md5Obj = new md5();
 						md5Obj.printHash(option);
+					case "E":
+						//
+						break;
+					case "F":
+						//
+						break;
+					case "G":
+						//
+						break;
+					case "H":
+						//
+						break;
+					case "I":
+						//
+						break;
+					case "J":
+						//
+						break;
+					case "K":
+						//
+						break;
+					case "L":
+						//
+						break;
 				}
 				break;
 			case 2:
@@ -25,6 +49,36 @@ class H4sh{
 						//
 						break;
 					case "B":
+						//
+						break;
+					case "C":
+						//
+						break;
+					case "D":
+						md5 md5Obj = new md5();
+						md5Obj.printHash(option);
+					case "E":
+						//
+						break;
+					case "F":
+						//
+						break;
+					case "G":
+						//
+						break;
+					case "H":
+						//
+						break;
+					case "I":
+						//
+						break;
+					case "J":
+						//
+						break;
+					case "K":
+						//
+						break;
+					case "L":
 						//
 						break;
 				}
@@ -43,6 +97,31 @@ class H4sh{
 					case "D":
 						md5 md5Obj = new md5();
 						md5Obj.printHash(option);
+					case "E":
+						//
+						break;
+					case "F":
+						//
+						break;
+					case "G":
+						//
+						break;
+					case "H":
+						//
+						break;
+					case "I":
+						//
+						break;
+					case "J":
+						//
+						break;
+					case "K":
+						//
+						break;
+					case "L":
+						//
+						break;
+
 				}
 				break;
 			case 4:
@@ -51,6 +130,36 @@ class H4sh{
 						//
 						break;
 					case "B":
+						//
+						break;
+					case "C":
+						//
+						break;
+					case "D":
+						md5 md5Obj = new md5();
+						md5Obj.printHash(option);
+					case "E":
+						//
+						break;
+					case "F":
+						//
+						break;
+					case "G":
+						//
+						break;
+					case "H":
+						//
+						break;
+					case "I":
+						//
+						break;
+					case "J":
+						//
+						break;
+					case "K":
+						//
+						break;
+					case "L":
 						//
 						break;
 				}	
@@ -63,20 +172,80 @@ class H4sh{
 					case "B":
 						//
 						break;
+					case "C":
+						//
+						break;
+					case "D":
+						md5 md5Obj = new md5();
+						md5Obj.printHash(option);
+					case "E":
+						//
+						break;
+					case "F":
+						//
+						break;
+					case "G":
+						//
+						break;
+					case "H":
+						//
+						break;
+					case "I":
+						//
+						break;
+					case "J":
+						//
+						break;
+					case "K":
+						//
+						break;
+					case "L":
+						//
+						break;
 				}
 				break;
 			case 6 :   
-				   switch(str){
-				   	case "A":
+				switch(str){
+					case "A":
 						//
 						break;
 					case "B":
 						//
 						break;
+					case "C":
+						//
+						break;
+					case "D":
+						md5 md5Obj = new md5();
+						md5Obj.printHash(option);
+					case "E":
+						//
+						break;
+					case "F":
+						//
+						break;
+					case "G":
+						//
+						break;
+					case "H":
+						//
+						break;
+					case "I":
+						//
+						break;
+					case "J":
+						//
+						break;
+					case "K":
+						//
+						break;
+					case "L":
+						//
+						break;
 				   }
 				break;
+			}
 		}
-	}
 	
 	public static void main(String[] args){
 		H4sh H4shObj = new H4sh();
