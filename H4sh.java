@@ -58,7 +58,7 @@ class H4sh{
 						break;
 					case "D":
 						md5 md5Obj = new md5();
-						md5Obj.printHash(option);
+						md5Obj.printHashes();
 					case "E":
 						//
 						break;

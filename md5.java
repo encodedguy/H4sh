@@ -3,6 +3,9 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.BufferedReader;
 
 class md5{
 	public md5(){
@@ -42,5 +45,28 @@ class md5{
 	public void printHash(int option){
 		Input input = new Input();
 		System.out.println("MD5: " + encode(input.takeInput(option)));
+	}
+
+	public void printHashes(){
+		System.out.printf("Enter filename: ");
+		Scanner input = new Scanner(System.in);
+		String filename= new String(input.nextLine());
+
+		try{
+			FileReader file = new FileReader(filename);
+			BufferedReader br = new BufferedReader(file);
+			String line;
+
+			while((line = br.readLine()) != null){
+				System.out.println("MD5: " + line + " : " + encode(line));
+			}
+
+			file.close();
+			input.close();
+
+		}catch(IOException ioe){
+			System.out.println("Unexpected error occured!");
+			ioe.printStackTrace();
+		}
 	}
 }
