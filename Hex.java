@@ -5,18 +5,10 @@ class Hex{
     public Hex(){
         System.out.print("\033[H\033[2J");  
 		System.out.flush(); 
-		System.out.println("BASE64 MODE");
-		encode();
+		System.out.println("HEX MODE");
     }
 
-    public String takeInput(){
-        System.out.printf("Enter a string: ");
-        Scanner input = new Scanner(System.in);
-        return input.nextLine();
-    }
-
-    public String encode(){
-        String password = takeInput();
+    public String encode(String password){
         final byte[] defaultBytes = password.getBytes();
         StringBuilder result = new StringBuilder();
         try {
@@ -29,7 +21,8 @@ class Hex{
         }
     }
     
-    public void printHash(){
-        System.out.println("Hex: " + encode());
-    }
+    public void printHash(int option){
+		Input input = new Input();
+		System.out.println("Hex: " + encode(input.takeInput(option)));
+	}
 }
