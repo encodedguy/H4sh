@@ -31,6 +31,6 @@ class MD2{
 
     public void printHash(int option){
 		Input input = new Input();
-		System.out.println("MD5: " + encode(input.takeInput(option)));
+		System.out.println("MD2: " + encode(input.takeInput(option)));
 	}
 }

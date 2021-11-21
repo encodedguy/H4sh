@@ -43,6 +43,9 @@ class H4sh{
 					case "L":
 						//
 						break;
+					case "M":
+						MD2 md2Obj = new MD2();
+						md2Obj.printHash(option);
 				}
 				break;
 			case 2:
@@ -127,6 +130,9 @@ class H4sh{
 					case "L":
 						//
 						break;
+					case "M":
+						MD2 md2Obj = new MD2();
+						md2Obj.printHash(option);
 
 				}
 				break;

@@ -35,6 +35,7 @@ class banner{
 		System.out.println("--->> J. Whirlpool");
 		System.out.println("--->> K. XOR Cipher");
 		System.out.println("--->> L. Caesar Cipher");
+		System.out.println("--->> M. MD2");
 	}
 	
 	public String banner1Input(){
