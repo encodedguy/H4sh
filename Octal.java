@@ -6,17 +6,9 @@ class Octal{
         System.out.print("\033[H\033[2J");  
 		System.out.flush(); 
 		System.out.println("BASE64 MODE");
-		encode();
     }
 
-    public String takeInput(){
-        System.out.printf("Enter a string: ");
-        Scanner input = new Scanner(System.in);
-        return input.nextLine();
-    }
-
-    public String encode(){
-        String password = takeInput();
+    public String encode(String password){
         final byte[] defaultBytes = password.getBytes();
         BigInteger oct;
         try {
@@ -28,7 +20,8 @@ class Octal{
         }
     }
     
-    public void printHash(){
-        System.out.println("Octal: " + encode());
-    }
+    public void printHash(int option){
+		Input input = new Input();
+		System.out.println("Octal: " + encode(input.takeInput(option)));
+	}
 }
