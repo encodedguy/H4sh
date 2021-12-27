@@ -2,8 +2,11 @@
 
 import java.util.*;
 import java.math.BigInteger;
-import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Scanner;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.IOException;
 
 public class Binary {
     public Binary(){
@@ -23,10 +26,10 @@ public class Binary {
             char[] a = input.toCharArray();
             int l, r = 0;
             r = a.length - 1;
-     
+
             for (l = 0; l < r; l++, r--)
             {
-               
+
                 char temp = a[l];
                 a[l] = a[r];
                 a[r] = temp;
@@ -34,17 +37,17 @@ public class Binary {
             return String.valueOf(a);
         }
 
-        public static void encode(){
-            String s=takeInput();
-            System.out.println("Binary: " );
+        public static String encode(String text){
+            String s = text;
+            String binary = "";
                 int n = s.length();
-         
+
                 for (int i = 0; i < n; i++)
                 {
-                   
+
                     int val = Integer.valueOf(s.charAt(i));
-         
-                  
+
+
                     String bin = "";
                     while (val > 0)
                     {
@@ -57,17 +60,38 @@ public class Binary {
                         val /= 2;
                     }
                     bin = reverse(bin);
-         
-                    System.out.print(bin + " ");
+
+                    binary += bin + " ";
                 }
-            
-        }
-        public static void printHash(){
-            encode(); 
+
+                return binary;
         }
 
-       
+        public static void printHash(int option){
+            Input inputObj = new Input();
+            System.out.println("Binary: " + encode(inputObj.takeInput(option)));
+        }
+
+        public void printHashes(){
+      		System.out.printf("Enter filename: ");
+      		Scanner input = new Scanner(System.in);
+      		String filename= new String(input.nextLine());
+
+      		try{
+      			FileReader file = new FileReader(filename);
+      			BufferedReader br = new BufferedReader(file);
+      			String line;
+
+      			while((line = br.readLine()) != null){
+      				System.out.println("Binary: " + line + " : " + encode(line));
+      			}
+
+      			file.close();
+      			input.close();
+
+      		}catch(IOException ioe){
+      			System.out.println("Unexpected error occured!");
+      			ioe.printStackTrace();
+      		}
+      	}
     }
-
-     
-       

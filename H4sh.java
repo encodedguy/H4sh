@@ -6,25 +6,30 @@ class H4sh{
 			case 1:
 				switch(str){
 					case "A":
-						//
+						Binary binaryObj = new Binary();
+						binaryObj.printHash(option);
 						break;
 					case "B":
-						//
+						// CaesarCipher CaesarCipherObj = new CaesarCipher();
+						// CaesarCipherObj.printHash(option);
 						break;
 					case "C":
-						//
+						Hex hexObj = new Hex();
+						hexObj.printHash(option);
 						break;
 					case "D":
 						md5 md5Obj = new md5();
 						md5Obj.printHash(option);
 					case "E":
-						//
+						Octal octalObj = new Octal();
+						octalObj.printHash(option);
 						break;
 					case "F":
 						//
 						break;
 					case "G":
-						//
+						sha128 sha128Obj = new sha128();
+						sha128Obj.printHash(option);
 						break;
 					case "H":
 						sha256 sha256Obj = new sha256();
@@ -51,32 +56,37 @@ class H4sh{
 			case 2:
 				switch(str){
 					case "A":
-						//
+						Binary binaryObj = new Binary();
+						binaryObj.printHashes();
 						break;
 					case "B":
 						//
 						break;
 					case "C":
-						//
+						Hex hexObj = new Hex();
+						hexObj.printHashes();
 						break;
 					case "D":
 						md5 md5Obj = new md5();
 						md5Obj.printHashes();
 					case "E":
-						//
+						Octal octalObj = new Octal();
+						octalObj.printHashes();
 						break;
 					case "F":
 						//
 						break;
 					case "G":
-						//
+						sha128 sha128Obj = new sha128();
+						sha128Obj.printHashes();
 						break;
 					case "H":
 						sha256 sha256Obj = new sha256();
 						sha256Obj.printHashes();
 						break;
 					case "I":
-						//
+						sha512 sha512Obj = new sha512();
+						sha512Obj.printHashes();
 						break;
 					case "J":
 						//
@@ -92,26 +102,31 @@ class H4sh{
 			case 3:
 				switch(str){
 					case "A":
-						//
+						Binary binaryObj = new Binary();
+						binaryObj.printHash(option);
 						break;
 					case "B":
-						//
+						// CaesarCipher CaesarCipherObj = new CaesarCipher();
+						// CaesarCipherObj.printHash(option);
 						break;
 					case "C":
-						//
+						Hex hexObj = new Hex();
+						hexObj.printHash(option);
 						break;
 					case "D":
 						md5 md5Obj = new md5();
 						md5Obj.printHash(option);
 						break;
 					case "E":
-						//
+						Octal octalObj = new Octal();
+						octalObj.printHash(option);
 						break;
 					case "F":
 						//
 						break;
 					case "G":
-						//
+						sha128 sha128Obj = new sha128();
+						sha128Obj.printHash(option);
 						break;
 					case "H":
 						sha256 sha256Obj = new sha256();
@@ -174,9 +189,9 @@ class H4sh{
 					case "L":
 						//
 						break;
-				}	
+				}
 				break;
-			case 5:    
+			case 5:
 				   switch(str){
 					case "A":
 						//
@@ -216,7 +231,7 @@ class H4sh{
 						break;
 				}
 				break;
-			case 6 :   
+			case 6 :
 				switch(str){
 					case "A":
 						//
@@ -258,7 +273,7 @@ class H4sh{
 				break;
 			}
 		}
-	
+
 	public static void main(String[] args){
 		H4sh H4shObj = new H4sh();
 		bigBanner bigBannerObj = new bigBanner();
@@ -275,17 +290,17 @@ class H4sh{
 
 		if (option == 1){
 			bannerObj.banner1();
-			H4shObj.Switch(option, bannerObj.banner1Input());	
+			H4shObj.Switch(option, bannerObj.banner1Input());
 		}
 
 		if(option == 2){
 			bannerObj.banner1();
 			H4shObj.Switch(option, bannerObj.banner1Input());
 		}
-	
+
 		if (option == 3){
 			bannerObj.banner1();
-			H4shObj.Switch(option, bannerObj.banner1Input());	
+			H4shObj.Switch(option, bannerObj.banner1Input());
 		}
 
 		if (option == 4){
@@ -295,7 +310,7 @@ class H4sh{
 
 		if (option == 5){
 			bannerObj.banner1();
-			H4shObj.Switch(option, bannerObj.banner1Input());	
+			H4shObj.Switch(option, bannerObj.banner1Input());
 		}
 
 		if (option == 6){
