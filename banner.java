@@ -6,9 +6,9 @@ class banner{
 		System.out.println("--->> 1. Encrypt String");
 		System.out.println("--->> 2. Encrypt Strings (File)");
 		System.out.println("--->> 3. Encrypt Whole File");
-		System.out.println("--->> 4. Decrypt String");
-		System.out.println("--->> 5. Decrypt Whole File");
-		System.out.println("--->> 6. Decrypt Strings in a File");
+// 		System.out.println("--->> 4. Decrypt String");
+// 		System.out.println("--->> 5. Decrypt Whole File");
+// 		System.out.println("--->> 6. Decrypt Strings in a File");
 	}
 
 	public int numInput(){
